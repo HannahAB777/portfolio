@@ -1,0 +1,122 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: aliceblue;
+    background-color: plum;
+}
+
+header{
+    display:flex;
+}
+
+header>h1{
+    flex-grow: 2;
+}
+
+header>nav{
+    flex-grow: 1;
+    display: flex;
+
+}
+
+header>nav>a{
+    flex-grow: 1;
+}
+
+summary{
+    margin: 25px 20% 25px 20%;
+    text-align: center;
+
+}
+span{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.sidebar{
+    float: left;
+    flex-grow: 1;
+    height: 1200px;
+    flex-basis: 25%;;
+    display: flex;
+    flex-direction: column;
+}
+
+#about-me{
+    flex-grow: 1;
+    height: 200px;
+    width: 100%;
+    text-align: center;
+}
+
+#work{
+    flex-grow: 1;
+    height: 900px;
+    width: 100%;
+    text-align: center;
+}
+
+#contact{
+    flex-grow: 1;
+    height: 100px;
+    width: 100%;
+    text-align: center;
+}
+.content{
+    float:right;
+    flex-grow: 1;
+    height: 1200px;
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section{
+    border: 1px solid plum;
+}
+#bio{
+    flex-grow: 1;
+    height: 200px;
+    flex-basis: 100%;
+}
+#maincontent{
+    flex-grow: 1;
+    height: 400px;
+    flex-basis: 100%;
+    background-image: "/assests/cat-story-13-1571415.jpg" alt = "cat yawning" ;
+}
+#project1{
+    flex-grow: 1;
+    height: 250px;
+    flex-basis: 50%;
+}
+
+#Project2{
+    flex-grow: 1;
+    height: 250px;
+    flex-basis: 50%;
+}
+
+#project3{
+    flex-grow: 1;
+    height: 250px;
+    flex-basis: 50%;
+}
+
+#project4{
+    flex-grow: 1;
+    height: 250px;
+    flex-basis: 50%;
+}
+
+#contactinfo{
+    flex-grow: 1;
+    height: 100px;
+    flex-basis: 100%
+}
+footer{
+    text-align: center;
+    padding: 20px;
+}
