@@ -32,7 +32,8 @@ header>nav>a{
 summary{
     margin: 25px 20% 25px 20%;
     text-align: center;
-    background-color: plum;
+    background-color: powderblue;
+    color: purple;
 
 }
 span{
@@ -153,6 +154,7 @@ section>h1{
 
 #Project2{
     flex-grow: 1;
+    flex-shrink: 0;
     height: 250px;
     flex-basis: 50%;
     overflow: hidden;
@@ -183,6 +185,7 @@ section>h1{
 footer{
     text-align: center;
     padding: 20px;
+ 
 }
 
 .content>section:hover{
@@ -192,5 +195,17 @@ border: 10px solid purple;
 a:hover{
     color: powderblue;
     font-size: medium;
+}
+
+@media screen  and (max-width: 941px) {
+
+    section, img{
+
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 50%;
+    height: auto
+    }
+    
 }
 
