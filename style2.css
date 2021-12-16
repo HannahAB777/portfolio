@@ -4,11 +4,15 @@
     padding: 0px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: aliceblue;
-    background-color: plum;
+    text-decoration: none;
 }
-
+body{
+    background-color: powderblue;
+    text-align: center;
+}
 header{
     display:flex;
+    background-color: purple;
 }
 
 header>h1{
@@ -28,11 +32,13 @@ header>nav>a{
 summary{
     margin: 25px 20% 25px 20%;
     text-align: center;
+    background-color: plum;
 
 }
 span{
     display:flex;
     flex-wrap: wrap;
+    background-color: plum;
 }
 
 .sidebar{
@@ -42,8 +48,16 @@ span{
     flex-basis: 25%;;
     display: flex;
     flex-direction: column;
+    background-color: plum;
 }
 
+#dp{
+    max-height: 100px;
+    max-width: 100px;
+    position: absolute;
+    left: 50%;
+    
+}
 #about-me{
     flex-grow: 1;
     height: 200px;
@@ -73,9 +87,6 @@ span{
     flex-wrap: wrap;
 }
 
-section{
-    border: 1px solid plum;
-}
 #bio{
     flex-grow: 1;
     height: 200px;
@@ -84,39 +95,101 @@ section{
 #maincontent{
     flex-grow: 1;
     height: 400px;
+    flex-basis: 100%; 
+    overflow: hidden;
+    
+}
+
+#mainimg{
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+   object-position: center;
+}
+
+#img2{
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+   object-position: center;
+}
+
+#img3{
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+   object-position: center;
+}
+#img4{
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+   object-position: center;
+}
+#img5{
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+   object-position: center;
+}
+
+section>a{ 
     flex-basis: 100%;
-    background-image: "/assests/cat-story-13-1571415.jpg" alt = "cat yawning" ;
+}
+
+section>h1{
+    position: absolute;
 }
 #project1{
     flex-grow: 1;
     height: 250px;
     flex-basis: 50%;
+    overflow: hidden;
 }
 
 #Project2{
     flex-grow: 1;
     height: 250px;
     flex-basis: 50%;
+    overflow: hidden;
 }
 
 #project3{
     flex-grow: 1;
+    flex-shrink: 0;
     height: 250px;
     flex-basis: 50%;
+    overflow: hidden;
 }
 
 #project4{
     flex-grow: 1;
+    flex-shrink: 0;
     height: 250px;
     flex-basis: 50%;
+    overflow: hidden;
 }
 
 #contactinfo{
     flex-grow: 1;
+    flex-shrink: 0;
     height: 100px;
     flex-basis: 100%
 }
 footer{
     text-align: center;
     padding: 20px;
+}
+
+.content>section:hover{
+border: 10px solid purple;
+}
+
+a:hover{
+    color: powderblue;
+    font-size: medium;
+}
+
+@media screen {
+    
 }
